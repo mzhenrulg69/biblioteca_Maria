@@ -38,5 +38,11 @@ pipeline{
                  bat 'mkdir v%VERSION_BACK%'
             }
         }
+
+        stage('copiar fichero'){
+            steps{
+                bat 'xcopy /Y ".\\target\\*.jar" ".\\v%VERSION_BACK%" '
+            }
+        }
     }
 }
