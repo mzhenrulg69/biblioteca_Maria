@@ -56,5 +56,14 @@ pipeline{
                 }
             }
         }
+
+        stage('Deploy'){
+            steps{
+                bat """
+                    echo "starting deploy..."
+                    java -jar target/biblioteca_Maria-${VERSION_BACK}.jar
+                    """
+            }
+        }
     }
 }
