@@ -61,7 +61,7 @@ pipeline{
             steps{
                 bat """
                     echo "starting deploy..."
-                    java -jar target/biblioteca_Maria-${VERSION_BACK}.jar
+                    java -jar target/biblioteca-${VERSION_BACK}.jar
                     """
             }
         }
