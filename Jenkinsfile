@@ -10,7 +10,7 @@ pipeline{
     environment{
         VERSION_BACK = "2.0.1"
     }
-    
+
     stages{
 
         stage('Show messages'){
@@ -23,7 +23,7 @@ pipeline{
         stage('Checkout proyecto'){
             steps{
                  git branch:'master',
-                    url:'https://github.com/mzhenruñg69/workspace.git'
+                    url:'https://github.com/mzhenrulg69/workspace.git'
             }
         }
 
