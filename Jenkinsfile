@@ -23,7 +23,7 @@ pipeline{
         stage('Checkout proyecto'){
             steps{
                  git branch:'master',
-                    url:'https://github.com/mzhenrulg69/workspace.git'
+                    url:'https://github.com/mzhenrulg69/biblioteca_Maria.git'
             }
         }
 
