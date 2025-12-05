@@ -11,7 +11,7 @@ pipeline{
         VERSION_BACK = "2.0.1"
     }
     stages{
-    
+
         stage('Show messages'){
             steps{
             echo "Primer stage del pipeline"
@@ -38,4 +38,5 @@ pipeline{
         }
 
     }
+}
 }
