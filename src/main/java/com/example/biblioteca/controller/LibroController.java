@@ -3,6 +3,7 @@ package com.example.biblioteca.controller;
 import com.example.biblioteca.Entity.Libro;
 import com.example.biblioteca.service.LibroService;
 import com.example.biblioteca.service.LibroServicelmpl;
+import jakarta.persistence.Transient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class LibroController {
     public List<Libro> obtenerTodos(){
         return  this.libroServiceImpl.getLibros();
     }
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public Optional<Libro> getLibro(@PathVariable Long id){
         return  this.libroServiceImpl.getLibro(id);
     }
